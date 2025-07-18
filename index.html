@@ -6,6 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 
 <style>
@@ -28,6 +33,7 @@ display:inline-block;
 color:white;
 padding:10px;
 font-size:20px;
+margin-right:20px;
 
 }
 
@@ -36,6 +42,8 @@ nav
 background:black;
 height:40px;
 margin-top:-10px;
+text-align:right;
+
 }
 
 #banner h1
@@ -73,7 +81,7 @@ margin-left:20px;
 width:10%;
 text-align:center;
 padding:5px;
-margin-top:30px;
+margin-top:50px;
 cursor:pointer;
 transition:0.5s;
 }
@@ -82,6 +90,58 @@ transition:0.5s;
 {
 background:black;
 color:white;
+
+}
+
+#flex
+
+{
+display:flex;
+}
+
+.pic
+
+{
+width:300px;
+height:300px;
+transition:1s;
+}
+
+.pic:hover
+
+{
+box-shadow:10px 10px 10px gray;
+transform:scale(1.025);
+border-radius:40px;
+}
+.box
+
+{
+padding:50px;
+margin-left:70px;
+height:450px;
+//background:red;
+border:2px solid #D4AF37;
+border-radius:30px;
+}
+
+.box h1
+
+{
+text-align:center;
+background:#D4AF37;
+color:white;
+border-radius:20px;
+
+
+}
+
+.box ul li
+
+{
+list-style:none;
+cursor:pointer;
+
 
 }
 
@@ -101,9 +161,36 @@ width:80%;
 width:30%;
 }
 
+nav ul li
 
+{
+padding:10px;
+font-size:17px;
+}
 
+#banner
 
+{
+ 
+ height:550px;
+
+}
+
+#flex
+
+{
+display:block;
+
+}
+
+.box
+
+{
+margin:auto;
+width:70%;
+margin-top:15px;
+
+}
 }
 
 </style>
@@ -126,7 +213,7 @@ width:30%;
 
 <div id="banner">
  
-<h1>HireEase</h1>
+<h1 class="animate__animated animate__fadeInDown"> HireEase</h1>
 
 <p>
 "Your search for dependable home help ends here —
@@ -140,8 +227,66 @@ dedicated to making your everyday easier."
 
 </div>
 
+<h1 class="animate__animated animate__fadeInDown" style="text-align:center; margin-top:50px; color:#D4AF37; font-size:40px;">🛎️Our Services</h1>
+
+<div id="flex">
+
+   <div class="box">
+     <img src="images/a2.jpg" class="pic">
+
+     <h1>Cook</h1>
+     
+     <ul>
+
+     <li>⏱️ Saves time and effort</li>
+     <li>🍽️ Fresh, healthy meals daily</li> 
+     <li>👩‍🍳 Professional, hygienic cooking</li>
+     <li>👨‍👩‍👧‍👦 Personalized for your family’s needs</li> 
+     
+
+     </ul>
 
 
+
+   </div>
+
+  <div class="box">
+   <img src="images/a3.jpg" class="pic">
+   
+    <h1>Care Taker</h1>
+
+<ul>
+
+     <li>🧓 Support for elderly, kids, or patients</li>
+     <li>🍽️ Meals and hygiene assistance</li> 
+     <li>💬 Emotional companionship</li>
+     <li>🚨 Emergency handling trained</li> 
+     
+
+     </ul>
+
+
+  </div>
+
+  <div class="box">
+ <img src="images/a4.jpg" class="pic"> 
+
+  <h1>Cleaner</h1>
+
+<ul>
+
+     <li>🧹 Clean and tidy home</li>
+     <li>🧼 Uses proper tools</li> 
+     <li>🏠 Hygienic living space</li>
+     <li>✅ Trained and reliable</li> 
+     
+
+     </ul>
+
+ </div>
+
+
+</div>
 
 
 </body>
